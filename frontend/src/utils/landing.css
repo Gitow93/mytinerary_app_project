@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem 1rem 1rem 1rem;
+  font-family: "Kalam", cursive;
+  color: rgb(46, 47, 51);
+}
+
+.browser_container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.browser_text {
+  font-family: "Kalam", cursive;
+  color: rgb(46, 47, 51);
+  font-size: 1.2rem;
+}
+
+.user_container {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: rgb(46, 47, 51);
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+
+.account_container {
+  list-style: none;
+  font-family: "Kalam", cursive;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: center;
+}
