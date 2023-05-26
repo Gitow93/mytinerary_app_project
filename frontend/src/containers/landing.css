@@ -38,9 +38,19 @@ header {
   list-style: none;
   font-family: "Kalam", cursive;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 1rem 6rem;
 }
 
 footer {
-  text-align: center;
+  text-align: end;
+  margin: 1rem;
+}
+
+.home__icon {
+  opacity: 20%;
+}
+
+.isActive {
+  opacity: 100%;
 }
