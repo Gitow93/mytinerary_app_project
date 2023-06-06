@@ -5,6 +5,12 @@
 header {
   display: flex;
   justify-content: center;
+  background-color: white;
+  border-bottom: 2px solid rgb(255, 243, 69);
+  padding-bottom: 10px;
+}
+body {
+  background-color: white;
 }
 
 .title {
@@ -12,7 +18,7 @@ header {
   font-size: 1.5rem;
   margin: 2rem 1rem 1rem 1rem;
   font-family: "Kalam", cursive;
-  color: rgb(46, 47, 51);
+  color: #3c4f57;
 }
 
 .browser_container {
@@ -22,14 +28,14 @@ header {
 
 .browser_text {
   font-family: "Kalam", cursive;
-  color: rgb(46, 47, 51);
+  color: rgb(200, 6, 6);
   font-size: 1.2rem;
 }
 
 .user_container {
   text-align: center;
   font-family: "Kalam", cursive;
-  color: rgb(46, 47, 51);
+  color: #3c4f57;
   font-size: 0.8rem;
   margin: 1rem;
 }
@@ -41,16 +47,15 @@ header {
   justify-content: space-between;
   margin: 1rem 6rem;
 }
+.emphasis {
+  color: rgb(200, 6, 6);
+}
 
 footer {
-  text-align: end;
+  text-align: center;
   margin: 1rem;
 }
 
 .home__icon {
-  opacity: 20%;
-}
-
-.isActive {
-  opacity: 100%;
+  opacity: 0%;
 }

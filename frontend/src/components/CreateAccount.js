@@ -1,5 +1,4 @@
 import React from "react";
-import "../containers/createaccount.css";
 import homeIcon from "../images/home_icon.png";
 import { Link } from "react-router-dom";
 

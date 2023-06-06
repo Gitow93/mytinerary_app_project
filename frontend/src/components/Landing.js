@@ -16,14 +16,6 @@ const Landing = () => {
       link: "/login",
     },
   ];
-  const homeLink = [
-    {
-      name: "Home",
-      icon: homeIcon,
-      link: "/",
-      isActive: false,
-    },
-  ];
 
   return (
     <>
@@ -35,7 +27,7 @@ const Landing = () => {
           style={{ height: "80px" }}
         />
       </header>
-      <body>
+      <>
         <h1 className="title">
           Find your perfect trip, designed by insiders who know and love their
           cities.
@@ -52,7 +44,9 @@ const Landing = () => {
           </Link>
         </div>
         <div className="user_container">
-          <h2>Want to build your own MYtinerary?</h2>
+          <h2>
+            Want to <span className="emphasis">build your own</span> MYtinerary?
+          </h2>
           <div className="account_container">
             {userMenu.map((menuItem, index) => (
               <Link key={index} to={menuItem.link}>
@@ -61,12 +55,9 @@ const Landing = () => {
             ))}
           </div>
         </div>
-      </body>
+      </>
       <footer>
-        <Link
-          to="/"
-          className={`home__icon ${homeLink.isActive ? "active" : ""}`}
-        >
+        <Link to="/" className="home__icon">
           <img
             src={homeIcon}
             alt={homeIcon}

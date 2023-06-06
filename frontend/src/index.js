@@ -1,8 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+/* import { composeWithDevTools } from "redux-devtools-extension";
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import thunk from "redux-thunk"; */
 import "./index.css";
 import Landing from "./components/Landing";
+import Cities from "./components/Cities";
 import LogIn from "./components/LogIn";
 import CreateAccount from "./components/CreateAccount";
 import reportWebVitals from "./reportWebVitals";
@@ -11,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Landing />,
+  },
+  {
+    path: "/cities",
+    element: <Cities />,
   },
   {
     path: "/login",
