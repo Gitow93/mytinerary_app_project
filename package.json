@@ -1,0 +1,13 @@
+{
+    "name": "mern_project",
+    "version": "0.1.0",
+    "private": true,
+    "proxy": "http://localhost5000/",
+    "dependencies": {
+        "concurrently": "^8.1.0"
+    },
+    "scripts": {
+        "installAll": "cd backend && npm install && cd ../frontend && npm install",
+        "startAll": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm start\""
+    } 
+}
