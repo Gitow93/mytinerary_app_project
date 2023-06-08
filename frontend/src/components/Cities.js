@@ -1,5 +1,6 @@
 import homeIcon from "../images/home_icon.png";
 import cityStamp from "../images/city.jpg";
+import searchIcon from "../images/search_icon.png";
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -38,8 +39,14 @@ const Cities = () => {
 
   return (
     <>
-      <h1>Cities</h1>
-      <div>
+      <h1>OUR CITIES</h1>
+      <div className="search_container">
+        <img
+          className="search_icon"
+          src={searchIcon}
+          alt="icono de buscar"
+          style={{ width: "20px", height: "20px" }}
+        />
         <input
           type="text"
           placeholder="Where do you want to go?"
@@ -67,9 +74,13 @@ const Cities = () => {
                 {city.name}
                 {
                   <img
-                    src={cityStamp}
-                    alt={cityStamp}
-                    style={{ width: "248px", height: "200px" }}
+                    src={city.imgUrl ? city.imgUrl : cityStamp}
+                    alt={
+                      city.imgUrl
+                        ? `Imagen de la ciudad de ${city.name}`
+                        : "Imagen por defecto"
+                    }
+                    style={{ width: "240px", height: "200px" }}
                   />
                 }
               </li>
