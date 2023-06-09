@@ -60,11 +60,11 @@ const Cities = () => {
               const cityName = city.name.toLowerCase();
               return cityName.startsWith(queryLowerCase);
             })
-            .sort(function (a, b) {
-              if (a.name < b.name) {
+            .sort((cityA, cityB) => {
+              if (cityA.name < cityB.name) {
                 return -1;
               }
-              if (a.name > b.name) {
+              if (cityA.name > cityB.name) {
                 return 1;
               }
               return 0;
