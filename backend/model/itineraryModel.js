@@ -29,6 +29,10 @@ const itinerarySchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  cityName: {
+    type: String,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("itinerary", itinerarySchema);

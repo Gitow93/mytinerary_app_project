@@ -16,6 +16,7 @@ app.use(
 app.use(cors());
 // app.use(mainRoutes);
 app.use(("/cities", require("./routes/cities")));
+app.use(("/itinerary", require("./routes/itineraries")));
 
 const port = process.env.PORT || 5000;
 

@@ -70,20 +70,23 @@ const Cities = () => {
               return 0;
             })
             .map((city) => (
-              <li className="city_file" key={city._id}>
-                {city.name}
-                {
-                  <img
-                    src={city.imgUrl ? city.imgUrl : cityStamp}
-                    alt={
-                      city.imgUrl
-                        ? `Imagen de la ciudad de ${city.name}`
-                        : "Imagen por defecto"
-                    }
-                    style={{ width: "240px", height: "200px" }}
-                  />
-                }
-              </li>
+              <Link to={`/itinerary/${city.name}`}>
+                {" "}
+                <li className="city_file" key={city._id}>
+                  {city.name}
+                  {
+                    <img
+                      src={city.imgUrl ? city.imgUrl : cityStamp}
+                      alt={
+                        city.imgUrl
+                          ? `Imagen de la ciudad de ${city.name}`
+                          : "Imagen por defecto"
+                      }
+                      style={{ width: "240px", height: "200px" }}
+                    />
+                  }
+                </li>
+              </Link>
             ))}
         </ul>
       </div>
