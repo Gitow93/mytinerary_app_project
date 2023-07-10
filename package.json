@@ -7,7 +7,7 @@
         "concurrently": "^8.1.0"
     },
     "scripts": {
-        "installAll": "cd backend && npm install && cd ../frontend && npm install",
+        "installAll": "npm install && cd backend && npm install && cd ../frontend && npm install",
         "startAll": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm start\""
     } 
 }
