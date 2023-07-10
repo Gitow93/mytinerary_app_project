@@ -9,10 +9,10 @@ const citySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  /* imgUrl: {
+  imgUrl: {
     type: String,
     required: true,
-  },*/
+  },
 });
 
 module.exports = mongoose.model("city", citySchema);
