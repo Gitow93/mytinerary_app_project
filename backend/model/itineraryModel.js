@@ -9,12 +9,12 @@ const itinerarySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  itineraryInfo: {
-    type: String,
+  planning: {
+    type: Array,
     required: true,
   },
   rating: {
-    type: Number,
+    type: String,
     required: true,
   },
   duration: {
